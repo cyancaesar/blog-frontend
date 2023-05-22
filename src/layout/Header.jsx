@@ -109,9 +109,17 @@ const Header = () => {
             <AppBar sx={{ py: 1 }} position="static" color="transparent" elevation={0} >
                 <Toolbar variant="dense">
                     <Box onClick={() => navigate("/")} sx={{ display: "flex", flexGrow: 1, alignItems: "center", cursor: "pointer" }}>
-                        <AutoAwesomeIcon color="primary" />
+                        {/* <AutoAwesomeIcon color="primary" /> */}
+                        <Box component="img"
+                            sx={{
+                                height: 30,
+                                maxHeight: { xs: 233, md: 167 },
+                                maxWidth: { xs: 350, md: 250 }
+                            }}
+                            src={"/static/BASED.png"}
+                        />
                         <Typography variant="h6" component="div">
-                            Cyan
+                            Caesar
                         </Typography>
                     </Box>
                     {

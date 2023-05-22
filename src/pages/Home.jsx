@@ -14,9 +14,9 @@ const Home = () => {
             <Grid container justifyContent="center" alignItems="center" columnSpacing={4} rowSpacing={8}>
                 <Grid item sm={4}>
                     <Box>
-                        <Typography variant="h1">Hey</Typography>
-                        <Typography display="inline" mr={2} variant="h1">I&apos;m</Typography>
-                        <Typography display="inline-block" color="primary.main" variant="h1">Caesar</Typography>
+                        <Typography variant="h2">Hey</Typography>
+                        <Typography display="inline" mr={2} variant="h2">I&apos;m</Typography>
+                        <Typography display="inline-block" color="primary.main" variant="h2">Caesar</Typography>
                     </Box>
                 </Grid>
 
@@ -26,12 +26,19 @@ const Home = () => {
                             <DeveloperBoard />
                             <Typography variant="h6" px={1}>Software Developer</Typography>
                         </ListItem>
+                        <ListItem>
+                            <DeveloperBoard />
+                            <Typography variant="h6" px={1}><a style={{
+                                color: "inherit"
+                            }} href="https://youtu.be/uykwqCrLVPU?t=2">Pentester</a></Typography>
+                            <Typography variant="subtitle1">👈 Click me</Typography>
+                        </ListItem>
                     </List>
                 </Grid>
                 <Grid item sm={12}>
-                    <Box>
-                        <Typography variant="subtitle1">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque necessitatibus, voluptas cum temporibus adipisci consequatur maxime ducimus. Quis veritatis iure nobis? Vero explicabo quas dolore quam quisquam odit assumenda veniam.
+                    <Box textAlign="center">
+                        <Typography variant="overline">
+                            Software Engineers - Architects and builders of the digital world
                         </Typography>
                     </Box>
                 </Grid>
@@ -41,7 +48,6 @@ const Home = () => {
                         <Button variant="contained" color="info" onClick={(e) => navigate("/blog")}>Explore the blog</Button>
                     </Box>
                 </Grid>
-
             </Grid>
         </Container>
     );
