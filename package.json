@@ -27,7 +27,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .js --ext .jsx",
     "start:vite": "vite",
-    "build:vite": "vite build"
+    "build:vite": "vite build && scp ./dist/assets/*.js root@vps:/var/www/html/blog-backend/client/js/app.js"
   },
   "eslintConfig": {
     "extends": [

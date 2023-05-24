@@ -1,10 +1,14 @@
 import { AppBar, Toolbar, Typography, Box, IconButton, Button, Avatar, Menu, MenuItem, ListItemIcon, BottomNavigation, BottomNavigationAction } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import useAuth from "../hooks/useAuth";
 import useAxios from "../hooks/useAxios";
 import { useNavigate, useLocation, Link } from "react-router-dom";
-import { AdminPanelSettings, Article, Home, Logout, Settings } from "@mui/icons-material";
+// import { AdminPanelSettings, Article, Home, Logout, Settings } from "@mui/icons-material";
+import AdminPanelSettings from "@mui/icons-material/AdminPanelSettings";
+import Article from "@mui/icons-material/Article";
+import Home from "@mui/icons-material/Home";
+import Logout from "@mui/icons-material/Logout";
+import Settings from "@mui/icons-material/Settings";
 import config from "../config";
 
 const Header = () => {

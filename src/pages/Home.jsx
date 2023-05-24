@@ -1,7 +1,7 @@
 import { Container, Grid, Box, Button, Typography, List, ListItem } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { DeveloperBoard } from "@mui/icons-material";
+import DeveloperBoard from "@mui/icons-material/DeveloperBoard";
 import config from "../config";
 
 const Home = () => {
